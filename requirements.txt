@@ -1,0 +1,7 @@
+allure-pytest==2.8.32
+allure-python-commons==2.8.32
+pytest==6.2.1
+pytest-rerunfailures==9.1.1
+scoop==0.7.1.1
+selenium==3.14.0
+urllib3==1.26.2
