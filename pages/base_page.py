@@ -1,5 +1,5 @@
-from selenium.webdriver.support.wait import WebDriverWait
 import selenium.webdriver.support.expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from .locators import BasePageLocators
 from selenium.webdriver.common.keys import Keys

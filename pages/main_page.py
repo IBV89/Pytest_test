@@ -14,4 +14,3 @@ class MainPage(BasePage):
         for link in links[:count]:
             a_link = link.get_attribute('href')
             assert text in a_link, 'First results not is count'
-

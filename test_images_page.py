@@ -1,3 +1,4 @@
+import allure
 import pytest
 from .pages.main_page import MainPage
 from .pages.images_page import ImagesPage
@@ -5,6 +6,7 @@ from .pages.images_page import ImagesPage
 link = 'https://yandex.ru/'
 
 
+@allure.feature('test images slider')
 @pytest.mark.images
 class TestSliderForImagesPage:
     def test_show_pictures_in_images_page(self, browser):
@@ -18,5 +20,3 @@ class TestSliderForImagesPage:
         images_page.should_be_image_for_click()
         images_page.should_open_image_in_slider()
         images_page.should_change_image_after_click()
-
-

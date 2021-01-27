@@ -1,5 +1,5 @@
 import allure
-import urllib.parse as urlib
+import urllib.parse as urllib
 from .base_page import BasePage
 from .locators import ImagesPageLocator
 
@@ -27,7 +27,7 @@ class ImagesPage(BasePage):
         handle = self.browser.window_handles[-1]
         self.browser.switch_to.window(handle)
         url = self.browser.current_url
-        url_keys = urlib.parse_qs(url)
+        url_keys = urllib.parse_qs(url)
         name_of_query = url_keys['text'][0]
         return name_of_query
 

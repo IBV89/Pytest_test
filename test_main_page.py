@@ -1,3 +1,4 @@
+import allure
 import pytest
 from .pages.main_page import MainPage
 
@@ -8,6 +9,7 @@ link_to_search = 'tensor.ru'  # Ссылка искомая среди резу�
 count_to_search_link = 5  # Количество совпадений поисковой ссылки в результатах
 
 
+@allure.feature('test search line')
 @pytest.mark.xfail
 class TestSearchFromMainPage:
     @pytest.mark.main
